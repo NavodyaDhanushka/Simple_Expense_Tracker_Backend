@@ -1,5 +1,5 @@
 // controllers/expenseController.js
-import Expense from "../models/Expense.js"; // 👈 add .js extension
+import Expense from "../models/Expense.js"; // 👈 keep .js extension
 
 // Get all expenses
 export const getExpenses = async (req, res) => {
@@ -14,12 +14,13 @@ export const getExpenses = async (req, res) => {
 // Add new expense
 export const addExpense = async (req, res) => {
     try {
-        const { title, amount, category, date } = req.body;
+        const { title, amount, category, description, date } = req.body; // ✅ include description
 
         const newExpense = new Expense({
             title,
             amount,
             category,
+            description, // ✅ include description
             date,
         });
 
@@ -33,11 +34,11 @@ export const addExpense = async (req, res) => {
 // Update expense
 export const updateExpense = async (req, res) => {
     try {
-        const { title, amount, category, date } = req.body;
+        const { title, amount, category, description, date } = req.body; // ✅ include description
 
         const updatedExpense = await Expense.findByIdAndUpdate(
             req.params.id,
-            { title, amount, category, date },
+            { title, amount, category, description, date }, // ✅ include description
             { new: true, runValidators: true }
         );
 
