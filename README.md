@@ -39,6 +39,7 @@ The Simple Expense Tracker is a full-stack web application built with the MERN s
 | :-------- | :------- | :------------------------- |
 | `None` | `None` | No parameters required. |
 
+
 #### Create Expense
 
 ```http
@@ -53,7 +54,15 @@ The Simple Expense Tracker is a full-stack web application built with the MERN s
 | `description`      | `string` | **Optional**. Additional details about the expense.|
 | `date`      | `string` | **Optional**. Date of expense (default: current date). |
 
-
+```json
+  {
+  "title": "Match Tickets",
+  "amount": 1200,
+  "category": "Entertainment",
+  "description": "Cricket",
+  "date": "2025-08-17T20:00:00.000Z"
+}
+```
 
 #### Update Expense
 
@@ -70,6 +79,15 @@ The Simple Expense Tracker is a full-stack web application built with the MERN s
 | `description`      | `string` | **Optional**. Updated description.|
 | `date`      | `string` | **Optional**. Updated date. |
 
+```json
+  {
+  "title": "Match Tickets - VIP",
+  "amount": 1500,
+  "category": "Entertainment",
+  "description": "Cricket - VIP Stand",
+  "date": "2025-08-17T20:00:00.000Z"
+}
+```
 
 #### Delete Expense
 
