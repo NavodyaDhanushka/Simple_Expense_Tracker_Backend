@@ -147,3 +147,8 @@ Open http://localhost:5000 in your Postman.
 Add, view, edit, delete, and search expenses.
 
 Verify data is stored in MongoDB.
+
+
+#### Postman URL
+
+https://web.postman.co/workspace/My-Workspace~4fc3522d-edf3-4a0d-88b7-b43a669b802d/collection/36946422-98e85196-5467-4ef3-a21c-71dc78f06719?action=share&source=copy-link&creator=36946422
